@@ -1,0 +1,241 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.btn {
+    padding: 6px 12px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn-agregar {
+    background-color: #28a745;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.btn-editar {
+    background-color: #007bff;
+}
+
+.btn-eliminar {
+    background-color: #dc3545;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#buscador {
+    padding: 8px;
+    width: 250px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+/* ===== Estilos especiales para login.php ===== */
+.login-body {
+    background-color: #0d0d0d;
+    background-image: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #000000 70%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-box {
+    background: #1c1c1c;
+    width: 320px;
+    max-width: 100%;
+    padding: 35px 30px;
+    border-radius: 10px;
+    border: 1px solid #e63946;
+    box-shadow: 0 0 25px rgba(230, 57, 70, 0.4);
+    text-align: center;
+}
+
+.login-box h1 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.login-box label {
+    color: #ccc;
+    text-align: left;
+}
+
+.login-box input {
+    background: #2b2b2b;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #e63946;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #e63946;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.2s;
+}
+
+.login-box button:hover {
+    background-color: #c72c39;
+}
+
+/* ===== Responsive general ===== */
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 15px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    table tbody tr {
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    table td {
+        border: none;
+        padding: 6px 0;
+        position: relative;
+        padding-left: 45%;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    #buscador {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+.btn-cerrar-sesion {
+    background-color: #6c757d;
+    display: inline-block;
+}
+
+.btn-cerrar-sesion:hover {
+    background-color: #5a6268;
+}
+/* ===== Menú de navegación ===== */
+.menu-nav {
+    background-color: #1c1c1c;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.menu-nav a:hover {
+    background-color: #e63946;
+}
+
+.mensaje-exito {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
