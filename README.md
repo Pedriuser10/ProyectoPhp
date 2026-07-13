@@ -18,10 +18,6 @@ El sistema facilita la gestión de los registros de autos, evitando llevar la in
 - Validación de datos mediante JavaScript.
 - Conexión a una base de datos MySQL utilizando PHP.
 
-## Base de datos
-**Nombre:** concesionario
-## Usuario y contraseña de prueba
-1234
 
 
 ## Tecnologías utilizadas
