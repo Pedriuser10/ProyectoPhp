@@ -21,10 +21,6 @@ El sistema facilita la gestión de los registros de autos, evitando llevar la in
 ## Base de datos
 **Nombre:** concesionario
 ## Usuario y contraseña de prueba
-
-Usuario:
-admin
-Contraseña 
 1234
 
 
